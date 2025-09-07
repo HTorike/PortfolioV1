@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 
 body {
+  justify-content: center;
   margin: 0;
   font-family: 'Exo 2', sans-serif;
   background-color: #e0aaff;
@@ -32,35 +33,59 @@ body {
 
 /* Section 1 */
 
-.sec1 {
-  padding: 10em 0;
+.BackgroundSec1 {
+  display: flex;
+  flex-direction: column;
 }
 
-.sec1Container {
-  display: grid;
-  grid-template-columns: 50% 50%;
+.BackgroundContainer {
+  display: flex;
+  justify-content: center;
+  padding: 15em 5em;
 }
 
-.sec1Title {
-  display: grid;
-  grid-template-rows: 1fr 2fr;
-  text-align: end;
-}
-
-.sec1Title h2 {
+.BackgroundTitle h2 {
   margin: 0;
-  padding-right: 1em;
+  padding:0 1em 0 10em;
   font-size: 30px;
 }
 
-.sec1Content {
+.BackgroundContent {
+  display: flex;
+  flex-direction: column;
   border-left: 1px solid #5a189a;
-  width: 100%;
+  width: 45%;
 }
 
-.sec1Content p {
+.BackgroundContent p {
   font-size: 16px;
   width: 50%;
   margin: 0 0 1em 0;
   padding-left: 2em;
+}
+
+/* SkillsSec1 */
+
+
+.SkillsContainer {
+  display: flex;
+  justify-content: center;
+  padding: 15em 5em;
+}
+
+.SkillsTitle {
+  padding-right: 2em;
+}
+
+.SkillsContainer ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0 0 0 2em;
+  gap: 5em;
+  border-left: solid 1px #5a189a; ;
+}
+
+.SkillsContainer li {
+  font-weight: 600;
+  font-size: 20px;
 }

@@ -3,7 +3,8 @@ import './App.css';
 import ToggleSwitch from './components/ToggleSwitch';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import BackgroundSec1 from './components/backgroundSec1';
+import SkillsSec1 from './components/SkillsSec1';
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
           <ToggleSwitch style={{ width: '20px' }} />
         </div>
       </header>
+      
         <section className='introSection'>
           <div className="intro">
             <h1 className="name">Hello, I'm A. Patrick</h1>
@@ -39,7 +41,9 @@ function App() {
           </div>
         </section>
 
-        <backgroundSec1 />
+    <BackgroundSec1 />
+
+    <SkillsSec1 />
 
     </>
   );
