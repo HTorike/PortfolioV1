@@ -7,7 +7,7 @@ function backgroundSec1() {
         <div className="BackgroundTitle">
         <h2 data-aos="fade-up">Background</h2>
         </div>
-        <div className="BackgroundContent">
+        <div className="BackgroundContent" data-aos="fade-up">
         <p data-aos="fade-up">
           I am currently a junior front-end software engineer, capable of creating beautiful pages without sacrificing functionality. I have experience with JavaScript, React, HTML, and CSS, and I am always looking to learn new technologies and improve my skills.
         </p>

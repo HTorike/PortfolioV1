@@ -1,12 +1,21 @@
-import React, {useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import ToggleSwitch from './components/ToggleSwitch';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import BackgroundSec1 from './components/backgroundSec1';
 import SkillsSec1 from './components/SkillsSec1';
+import MouseGlow from './components/mouseGlow';
 
 function App() {
+
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const handleThemeToggle = () => {
+    setIsDarkMode(!isDarkMode);
+    document.body.classList.toggle('dark-mode');
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -18,10 +27,12 @@ function App() {
     <>
       <header className="header">
         <div className="headerContent">
-          <ToggleSwitch style={{ width: '20px' }} />
+          <ToggleSwitch isToggled={isDarkMode} onToggle={handleThemeToggle} />
         </div>
       </header>
       
+      <MouseGlow isDarkMode={isDarkMode} />
+
         <section className='introSection'>
           <div className="intro">
             <h1 className="name">Hello, I'm A. Patrick</h1>

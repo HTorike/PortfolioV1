@@ -8,7 +8,7 @@ function SkillsSec1() {
                     <h2 data-aos="fade-up">Skills</h2>
                 </div>
                 <div className="SkillsContent">
-                    <ul>
+                    <ul data-aos="fade-up">
                         <div>
                             <li data-aos="fade-up">Languages</li>
                             <p data-aos="fade-up">JavaScript (ES6)</p>

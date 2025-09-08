@@ -5,20 +5,14 @@ import moonIconB from '../assets/moon_b.svg';
 import sunIconW from '../assets/sun_w.png';
 import moonIconW from '../assets/moon_w.png';
 
-const ToggleSwitch = () => {
-  const [isToggled, setIsToggled] = useState(false);
-
-  const handleToggle = () => {
-    setIsToggled(!isToggled);
-    document.body.classList.toggle('dark-mode');
-  };
+const ToggleSwitch = ({isToggled, onToggle}) => {
 
   return (
     <div className="toggle-container">
       <span className={`icon ${!isToggled ? 'active-icon': ''}`}><img src={!isToggled ? sunIconB : sunIconW} alt="Sun Icon" width={20}/></span>
       <div 
         className={`toggle-switch ${isToggled ? 'toggled' : ''}`}
-        onClick={handleToggle}
+        onClick={onToggle}
       >
         <div className="toggle-ball"></div>
       </div>

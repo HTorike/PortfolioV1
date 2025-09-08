@@ -44,24 +44,28 @@ body {
   padding: 15em 5em;
 }
 
+.BackgroundTitle {
+  display: flex;
+  border-right: 1px solid #5a189a;
+}
+
 .BackgroundTitle h2 {
   margin: 0;
-  padding:0 1em 0 10em;
-  font-size: 30px;
+  padding-right: 1em;
+  font-size: 35px;
 }
 
 .BackgroundContent {
   display: flex;
   flex-direction: column;
   border-left: 1px solid #5a189a;
-  width: 45%;
+  width: 30%;
 }
 
 .BackgroundContent p {
-  font-size: 16px;
-  width: 50%;
+  font-size: 20px;
   margin: 0 0 1em 0;
-  padding-left: 2em;
+  padding: 0 2em 0 2em;
 }
 
 /* SkillsSec1 */
@@ -77,6 +81,11 @@ body {
   padding-right: 2em;
 }
 
+.SkillsTitle h2 {
+  font-size: 35px;
+  margin-top: 0;
+}
+
 .SkillsContainer ul {
   display: flex;
   list-style-type: none;
@@ -87,5 +96,5 @@ body {
 
 .SkillsContainer li {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 25px;
 }
