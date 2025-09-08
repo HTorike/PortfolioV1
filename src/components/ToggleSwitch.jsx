@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ToggleSwitch.css';
 import sunIconB from '../assets/sun_b.svg';
 import moonIconB from '../assets/moon_b.svg';
