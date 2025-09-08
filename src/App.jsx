@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import BackgroundSec1 from './components/backgroundSec1';
 import SkillsSec1 from './components/SkillsSec1';
 import MouseGlow from './components/mouseGlow';
+import DeployLink from './components/DeployLink';
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
       
       <MouseGlow isDarkMode={isDarkMode} />
 
-        <section className='introSection'>
+      <section className='introSection'>
           <div className="intro">
             <h1 className="name">Hello, I'm A. Patrick</h1>
             <p className="description" style={{ fontSize: '40px' }}>
@@ -52,9 +53,23 @@ function App() {
           </div>
         </section>
 
-    <BackgroundSec1 />
+      <BackgroundSec1 />
 
-    <SkillsSec1 />
+      <SkillsSec1 />
+
+      <section className='ProjectsSec1'>
+        <div className='ProjectsContainer'>
+          <h2>Projects</h2>
+          <ul>
+            <li>
+              <DeployLink />
+            </li>
+            <li>
+              <DeployLink />
+            </li>
+          </ul>
+        </div>
+      </section>
 
     </>
   );

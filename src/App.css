@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
   justify-content: center;
@@ -10,7 +10,6 @@ body {
 
 .header {
   top: 0;
-  position: fixed;
   width: 100%;
 }
 
@@ -70,7 +69,6 @@ body {
 
 /* SkillsSec1 */
 
-
 .SkillsContainer {
   display: flex;
   justify-content: center;
@@ -91,10 +89,105 @@ body {
   list-style-type: none;
   padding: 0 0 0 2em;
   gap: 5em;
-  border-left: solid 1px #5a189a; ;
+  border-left: solid 1px #5a189a;
 }
 
 .SkillsContainer li {
   font-weight: 600;
   font-size: 25px;
+}
+
+/* Responsividade */
+
+@media (max-width: 900px) {
+  .intro {
+    width: 80%;
+    margin: 5em auto;
+  }
+
+  .introSection {
+    margin: 5em 0;
+  }
+
+  .BackgroundContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 1em;
+    margin: 5em 0;
+  }
+
+  .BackgroundTitle,
+  .BackgroundContent {
+    border: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .BackgroundTitle {
+    margin: 0 2em ;
+    padding: 1em 1em;
+    border-bottom: solid 1px #5a189a;
+    width: 84%;
+  }
+
+  .BackgroundTitle h2,
+  .SkillsTitle h2 {
+    font-size: 28px;
+    top: 0;
+  }
+
+  .BackgroundContent p{
+    padding-top: 1em;
+  }
+
+  .SkillsContainer {
+    margin: 5em 0;
+  }
+
+  .BackgroundContent p,
+  .SkillsContainer li {
+    font-size: 14px;
+  }
+  
+  .SkillsTitle {
+    padding: 1em 0.5em 0 0.5em;
+  }
+
+  .SkillsContent {
+    display: flex;
+    padding: 0 1em 0 0.5em;
+  }
+
+  .SkillsContainer ul {
+    gap: 0.5em;
+    border: none;
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerContent {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+  }
+  .introSection {
+    padding: 3em 0;
+  }
+  .intro {
+    width: 95%;
+    margin: 2em auto;
+  }
+  .BackgroundContainer,
+  .SkillsContainer {
+    padding: 2em 0.5em;
+  }
+  .BackgroundTitle h2,
+  .SkillsTitle h2 {
+    font-size: 22px;
+  }
+  .BackgroundContent p,
+  .SkillsContainer li {
+    font-size: 14px;
+  }
 }
