@@ -9,6 +9,7 @@ import MouseGlow from './components/mouseGlow';
 import DeployLink from './components/DeployLink';
 import AluraPlus from './components/AluraPlus.jsx';
 import Resume from './components/Resume.jsx';
+import PortfolioV1 from './components/PortfolioV1.jsx'
 
 function App() {
 
@@ -65,6 +66,8 @@ function App() {
           <h2 data-aos="fade-up">Projects</h2>
           </div>
           <ul>
+            <PortfolioV1 />
+            <hr data-aos="fade-up" style={{ border: 'none', borderTop: '1px solid #5a189a', margin: '1em 0' }} />
             <Resume />
             <hr data-aos="fade-up" style={{ border: 'none', borderTop: '1px solid #5a189a', margin: '1em 0' }} />
             <AluraPlus />
