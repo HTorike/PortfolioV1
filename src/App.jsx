@@ -14,7 +14,7 @@ import UseSmoothScroll from './hooks/UseSmoothScroll.jsx';
 
 function App() {
 
-  const [scrollToIntro, introRef] = UseSmoothScroll();
+  const [introRef, scrollToIntro] = UseSmoothScroll();
 
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -42,7 +42,7 @@ function App() {
       
       <MouseGlow isDarkMode={isDarkMode} />
 
-      <section className='introSection' ref={introRef}>
+      <section id='Intro' className='introSection' ref={introRef}>
           <div className="intro">
             <h1 className="name">Hello, I'm A. Patrick</h1>
             <p className="description" style={{ fontSize: '40px' }}>
