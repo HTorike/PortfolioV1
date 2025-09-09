@@ -14,7 +14,7 @@ import useSmoothScroll from './hooks/UseSmoothScroll.jsx';
 
 function App() {
 
-  const [introRef, scrollToIntro] = useSmoothScroll();
+  const [scrollToIntro, introRef] = useSmoothScroll();
 
   const [isDarkMode, setIsDarkMode] = useState(false);
 
