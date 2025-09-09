@@ -10,8 +10,11 @@ import DeployLink from './components/DeployLink';
 import AluraPlus from './components/AluraPlus.jsx';
 import Resume from './components/Resume.jsx';
 import PortfolioV1 from './components/PortfolioV1.jsx'
+import useSmoothScroll from './hooks/UseSmoothScroll.jsx';
 
 function App() {
+
+  const [introRef, scrollToIntro] = useSmoothScroll();
 
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -21,6 +24,8 @@ function App() {
   };
 
   useEffect(() => {
+
+
     AOS.init({
       duration: 1000,
       once: true,
@@ -37,7 +42,7 @@ function App() {
       
       <MouseGlow isDarkMode={isDarkMode} />
 
-      <section className='introSection'>
+      <section className='introSection' ref={introRef}>
           <div className="intro">
             <h1 className="name">Hello, I'm A. Patrick</h1>
             <p className="description" style={{ fontSize: '40px' }}>
@@ -81,10 +86,11 @@ function App() {
           <p>Design & Developed by A. Patrick | 2025</p>
         </div>
         <div className='footerLinks'>
-          <a href="#" style={{
+          <a onClick={scrollToIntro} style={{
             fontSize: '35px',
             textDecoration: 'none',
             marginRight: '0.5em',
+            cursor: 'default'
           }}>☝️</a>
           <a href="mailto:patrick231102@gmail.com?subject=Contact Subject&body=Hello, could we have a conversation?">Email</a>
           <a href="https://github.com/HTorike">Github</a>
