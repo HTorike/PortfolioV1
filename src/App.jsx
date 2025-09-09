@@ -10,11 +10,11 @@ import DeployLink from './components/DeployLink';
 import AluraPlus from './components/AluraPlus.jsx';
 import Resume from './components/Resume.jsx';
 import PortfolioV1 from './components/PortfolioV1.jsx'
-import useSmoothScroll from './hooks/UseSmoothScroll.jsx';
+import UseSmoothScroll from './hooks/UseSmoothScroll.jsx';
 
 function App() {
 
-  const [scrollToIntro, introRef] = useSmoothScroll();
+  const [scrollToIntro, introRef] = UseSmoothScroll();
 
   const [isDarkMode, setIsDarkMode] = useState(false);
 
