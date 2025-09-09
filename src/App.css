@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 
 body {
   justify-content: center;
@@ -69,6 +69,7 @@ body {
 
 /* SkillsSec1 */
 
+
 .SkillsContainer {
   display: flex;
   justify-content: center;
@@ -95,6 +96,72 @@ body {
 .SkillsContainer li {
   font-weight: 600;
   font-size: 25px;
+}
+
+/* Projects */
+
+.ProjectsSec1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ProjectsContainer {
+  display: flex;
+  justify-content: center;
+  padding: 15em 5em;
+}
+
+.ProjectsTitle {
+  padding-right: 2em;
+}
+
+.ProjectsTitle h2 {
+  font-size: 35px;
+  margin-top: 0;
+}
+
+.ProjectsContainer ul {
+  display: flex;
+  flex-direction: column;
+  border-left: solid 1px #5a189a;
+}
+
+.ProjectsContainer li {
+  margin: 2em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.ProjectImg {
+  width: 200px;
+  height: auto;
+  border: 2px solid #5a189a;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.ProjectsContainer p {
+  font-size: 20px;
+  max-width: 400px;
+  margin-top: 0.5em;
+}
+
+.ProjectImg:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  font-size: 20px;
+}
+
+.footerLinks {
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
 
 /* Responsividade */

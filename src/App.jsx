@@ -7,6 +7,8 @@ import BackgroundSec1 from './components/backgroundSec1';
 import SkillsSec1 from './components/SkillsSec1';
 import MouseGlow from './components/mouseGlow';
 import DeployLink from './components/DeployLink';
+import AluraPlus from './components/AluraPlus.jsx';
+import Resume from './components/Resume.jsx';
 
 function App() {
 
@@ -59,17 +61,34 @@ function App() {
 
       <section className='ProjectsSec1'>
         <div className='ProjectsContainer'>
-          <h2>Projects</h2>
+          <div className='ProjectsTitle'>
+          <h2 data-aos="fade-up">Projects</h2>
+          </div>
           <ul>
-            <li>
-              <DeployLink />
-            </li>
-            <li>
-              <DeployLink />
-            </li>
+            <Resume />
+            <hr data-aos="fade-up" style={{ border: 'none', borderTop: '1px solid #5a189a', margin: '1em 0' }} />
+            <AluraPlus />
           </ul>
         </div>
       </section>
+
+      <footer className='footer'>
+
+        <div className='footerText'>
+          <p>Design & Developed by A. Patrick | 2025</p>
+        </div>
+        <div className='footerLinks'>
+          <a href="#" style={{
+            fontSize: '35px',
+            textDecoration: 'none',
+            marginRight: '0.5em',
+          }}>☝️</a>
+          <a href="mailto:patrick231102@gmail.com?subject=Contact Subject&body=Hello, could we have a conversation?">Email</a>
+          <a href="https://github.com/HTorike">Github</a>
+          <a href="https://www.linkedin.com/in/patrick-andré-51098729b">LinkedIn</a>
+        </div>
+
+      </footer>
 
     </>
   );
